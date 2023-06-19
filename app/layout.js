@@ -1,5 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Header from './components/Header'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +14,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <title>Ability Plus Drainage Co</title>
+      </head>
+      <body className={inter.className}>
+        <div>
+          <Header />
+          <Nav />
+        </div>
+        <div>
+          {children}
+        </div>
+        <div>
+          <Footer />
+        </div>        
+        </body>
     </html>
   )
 }
