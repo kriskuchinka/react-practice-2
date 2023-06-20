@@ -1,9 +1,16 @@
+// import { Parallax } from 'react-scroll-parallax'
+
 function Hero1() {
+        
     return (
-       <>          
-         <img src="./hero1.webp" className="hero-image" />
-       </> 
+        <>
+        {/* <Parallax speed={-20}>          */}
+            <img src="./hero1.webp" className="hero-image" />
+        {/* </Parallax> */}
+        </>
     )
+    
+    
 }
 
 export default Hero1

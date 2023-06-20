@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css'
 import Hero1 from './components/Hero1'
@@ -11,12 +12,12 @@ import Hero4 from './components/Hero4'
 import MainContent4 from './components/MainContent4'
 import Hero5 from './components/Hero5'
 
-import { ParallaxProvider } from 'react-scroll-parallax'
+// import { ParallaxProvider } from 'react-scroll-parallax'
 
 export default function Home() {
   return (
     <>
-    <ParallaxProvider>
+    {/* <ParallaxProvider> */}
       <Hero1 />
       <MainContent1 />
       <Hero2 />
@@ -26,7 +27,7 @@ export default function Home() {
       <Hero4 />
       <MainContent4 />
       <Hero5 />
-    </ParallaxProvider>
+    {/* </ParallaxProvider> */}
     </>
   )
 }
